@@ -52,25 +52,20 @@ even more conveniently.
 Installation
 -----------------
 
-**Method 1**
+**Method 1 (direct link)**
 ```Shell
-curl -L https://install.pivpn.io | bash
+curl https://raw.githubusercontent.com/ravishekharco/pivpn/master/auto_install/install.sh | bash
 ```
 
-**Method 2 (direct link)**
+**Method 2 (clone repo)**
 ```Shell
-curl https://raw.githubusercontent.com/pivpn/pivpn/master/auto_install/install.sh | bash
-```
-
-**Method 3 (clone repo)**
-```Shell
-git clone https://github.com/pivpn/pivpn.git
+git clone https://github.com/ravishekharco/pivpn.git
 bash pivpn/auto_install/install.sh
 ```
 
 **To install from Test/Development branch**
 
-Check our [Wiki Page](https://github.com/pivpn/pivpn/wiki#testing)
+Check our [Wiki Page](https://github.com/ravishekharco/pivpn/wiki#testing)
 
 **How it works**
 
@@ -95,12 +90,12 @@ Finally, if you are using RSA, the script will take some time to build the serve
 
 The script will also make some changes to your system to allow it to forward internet traffic and allow VPN connections through the Pi's firewall. When the script informs you that it has finished configuring PiVPN, it will ask if you want to reboot. I have it where you do not need to reboot when done but it also can't hurt.
 
-After the installation is complete you can use the command `pivpn` to manage the server. Have a look at the [OpenVPN](https://github.com/pivpn/pivpn/wiki/OpenVPN) or [WireGuard](https://github.com/pivpn/pivpn/wiki/WireGuard) wiki for some example commands, connection instructions, FAQs, [troubleshooting steps](https://github.com/pivpn/pivpn/wiki/FAQ#how-do-i-troubleshoot-connection-issues).
+After the installation is complete you can use the command `pivpn` to manage the server. Have a look at the [OpenVPN](https://github.com/ravishekharco/pivpn/wiki/OpenVPN) or [WireGuard](https://github.com/ravishekharco/pivpn/wiki/WireGuard) wiki for some example commands, connection instructions, FAQs, [troubleshooting steps](https://github.com/ravishekharco/pivpn/wiki/FAQ#how-do-i-troubleshoot-connection-issues).
 
 Feedback & Support
 --------
 
-#### Before submitting any new issue or Pull request, please carefully read the [contributors' guide](https://github.com/pivpn/pivpn/blob/master/CONTRIBUTING.md) also please properly select the correct type of issue and and fill the presented template with all requested data! we will close all incomplete issue templates.
+#### Before submitting any new issue or Pull request, please carefully read the [contributors' guide](https://github.com/ravishekharco/pivpn/blob/master/CONTRIBUTING.md) also please properly select the correct type of issue and and fill the presented template with all requested data! we will close all incomplete issue templates.
 
 PiVPN is purely community driven, and we are interested in making this script work for as many people as possible, we welcome any feedback on your experience.
 Please be respectful and be aware that this is maintained with our free time!
@@ -127,26 +122,3 @@ The foundation for all open-source VPN projects.
 [WireGuard](https://www.wireguard.com/)
 *An extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography.*
 
-Contributions
--------------
-
-Please check the current issues to see where you can help. If you have any
-feature ideas or requests, or are interested in adding your ideas to it,
-testing it on other platforms, please comment or leave a pull request.
-If you contribute often I can add you as a member of the PiVPN project.
-I will be happy to work with you!
-
-If you have found this tool to be useful and want to Donate then consider the following
-sources.
-
-1. I began this as a rough merger of the code at [OpenVPNSetup](https://github.com/StarshipEngineer/OpenVPN-Setup) who you can donate to at [this PayPal link](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=K99QGVL7KA6ZL)
-
-2. And the code at [pi-hole.net](https://github.com/pi-hole/pi-hole)
-
-3. Of course there is [OpenVPN](https://openvpn.net)
-
-4. Also [WireGuard](https://www.wireguard.com/)
-
-5. And as always the ever vigilant [EFF](https://www.eff.org/)
-
-PiVPN is not taking donations at this time but if you want to show your appreciation, then contribute or leave feedback on suggestions or improvements.
